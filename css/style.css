@@ -372,3 +372,54 @@ form .submit{
     display: flex;
     justify-content: center;
 }
+
+footer{
+background-color: var(--secondary-bg-color);
+padding: 30px 30px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer h6{
+    font-size: 16px;
+}
+
+.footer-icon a{
+    padding: 1.2rem;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a i{
+    font-size: 2rem;
+    color: var(--secondary-bg-color);
+}
+
+
+/* Responsive */
+
+/* Ordinadeur portable et moins */
+@media (max-width:1200px){
+
+}
+
+/* Tablette et moins */
+@media (max-width:991px){
+    
+}
+
+/* smartphone et moins */
+@media (max-width:767px){
+    
+}
+
+/* tres petit smartphone et moins */
+@media (max-width:575px){
+    
+}
+

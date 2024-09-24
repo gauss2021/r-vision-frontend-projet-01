@@ -9,10 +9,27 @@ let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
 
+    console.log("On scroll actuellement");
 
-    /*==================== sticky navbar ====================*/
+    sections.forEach(sec=>{
 
-    /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
+        let top= window.scrollY;
+
+        let offsetTop= sec.offsetTop -150;
+
+        let offsetHeight=sec.offsetHeight;
+
+        let id= sec.getAttribute('id');
+        console.log(top);
+        console.log(sec.offsetHeight);
+
+        if(top >= offsetTop && top <offsetTop+offsetHeight){
+            navLinks.forEach(link=>{
+                link.classList.remove('active');
+                document.querySelector('header nav a[href*='+id+']').classList.add('active');
+            })
+        }
+    })
 };
 
 
