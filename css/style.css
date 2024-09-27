@@ -406,6 +406,10 @@ footer a i{
 /* Ordinadeur portable et moins */
 @media (max-width:1200px){
 
+    html{
+        font-size: 55%;
+    }
+
 }
 
 /* Tablette et moins */
@@ -416,6 +420,24 @@ footer a i{
 /* smartphone et moins */
 @media (max-width:767px){
     
+    #menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--bg-color);
+        width: 100%;
+        padding: 10px 20px;
+        display: none;
+    }
+
+    .activeNav{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* tres petit smartphone et moins */

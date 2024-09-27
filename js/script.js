@@ -2,6 +2,15 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
+menuIcon.addEventListener("click",()=>{
+
+    console.log("On a cliqué---");
+
+    menuIcon.classList.toggle("bx-x");
+
+    navbar.classList.toggle('activeNav');
+})
+
 
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
@@ -30,10 +39,28 @@ window.onscroll = () => {
             })
         }
     })
+
+    menuIcon.classList.remove("bx-x");
+
+    navbar.classList.remove("activeNav");
 };
 
 
 /*==================== scroll reveal ====================*/
 
+ScrollReveal({ reset: true,distance:"80px",duration:2000,delay:200});
+
+ScrollReveal().reveal('.home-content,.heading',{origin:'top'})
+
+ScrollReveal().reveal('.home-image,.about-img ,.about-content,.services-container,.portfolio-container,form',{origin:'bottom'})
 
 /*==================== typed js ====================*/
+
+const typed= new Typed(".multiple-text",{
+    strings:["FullStack Web Developer","FullStack Mobile Developer","Videos Games Developer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 500,
+    startDelay: 1000,
+    loop: true,
+})
