@@ -183,14 +183,14 @@ span{
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 1.5rem;
-
 }
 
 .services-box{
     background-color: var(--secondary-bg-color);
     border-radius: 2rem;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -414,7 +414,37 @@ footer a i{
 
 /* Tablette et moins */
 @media (max-width:991px){
+
+    html{
+        font-size: 50%;
+    }
     
+    section{
+        min-height: 70vh;
+        padding: 50px 30px 50px 30px;
+    }
+
+    .services-box i{
+        font-size: 5rem;
+    }
+
+    .services-box{
+        padding:20px ;
+        justify-content: space-between;
+    }
+
+    .services-box h3{
+        text-align: center;
+    }
+
+    .portfolio-container{
+        margin-top: 30px;
+    }
+
+    .portfolio-box .portfolio-box-layer{
+
+        padding: 0px;
+    }
 }
 
 /* smartphone et moins */
@@ -438,10 +468,72 @@ footer a i{
         display: flex;
         flex-direction: column;
     }
+
+    .home{
+        flex-wrap: wrap;
+    }
+
+    .about{
+        flex-wrap: wrap-reverse;
+    }
+
+    .services-container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .services-box{
+        width: 49%;
+    }
+
+    .last-service{
+        width: 100%;
+    }
+
+    .portfolio-container .portfolio-box{
+        width: 49%;
+    }
 }
 
 /* tres petit smartphone et moins */
 @media (max-width:575px){
-    
+    .home-image img{
+        width: 55vw;
+    }
+
+    .transition{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .btn{
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-size: 14px;
+        max-height: 40px;
+        
+    }
+
+    .about-img{
+        display: none;
+    }
+
+    .services-box{
+        width: 100%;
+    }
+
+    .portfolio-container .portfolio-box{
+        width: 100%;
+    }
+
+    .contact{
+        padding: 20px ;
+    }
+
+    .contact form{
+        min-width: none;
+        width: 100%;
+    }
 }
 
