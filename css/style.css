@@ -493,6 +493,10 @@ footer a i{
     .portfolio-container .portfolio-box{
         width: 49%;
     }
+
+    .footer-text h6{
+        font-size: 16px;
+    }
 }
 
 /* tres petit smartphone et moins */
@@ -527,13 +531,23 @@ footer a i{
         width: 100%;
     }
 
-    .contact{
-        padding: 20px ;
+    .contact form{
+        min-width: 100px;
+        max-width: 600px;
     }
 
-    .contact form{
-        min-width: none;
+    form .input-box{
+        margin-bottom: 5px;
+    }
+
+
+    .input-box input{
         width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-text h6{
+        font-size: 12px;
     }
 }
 
