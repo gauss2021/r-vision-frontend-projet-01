@@ -221,6 +221,52 @@ span{
     font-weight: 500;
 }
 
+/* Skills */
+
+.skills{
+    background-color: var(--secondary-bg-color);
+}
+
+.skills-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.skills-1,.skills-2{
+    width: 45%;
+}
+
+.skills-1 h4,.skills-2 h4{
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+
+.competence{
+    padding-left: 20px;
+    padding-right: 20px; 
+    margin-top: 24px;
+}
+
+.competence-back{
+    background-color: gray; border-radius: 20px; height: 30px;
+}
+
+.competence-value{
+    background-color: #0ef;height:100%; width: 100%; border-radius: 20px;
+}
+
+.experiences-container p{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
 .portfolio{
     background-color: var(--secondary-bg-color);
 }
@@ -442,9 +488,10 @@ footer a i{
     }
 
     .portfolio-box .portfolio-box-layer{
-
         padding: 0px;
     }
+
+    
 }
 
 /* smartphone et moins */
@@ -548,6 +595,27 @@ footer a i{
 
     .footer-text h6{
         font-size: 12px;
+    }
+
+    .skills-container{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .skills-1{
+        width: 100%;
+    }
+
+    .skills-2{
+        width: 100%;
+    }
+    
+    .skills-1 h4,.skills-2 h4{
+        font-size: 16px;
+       
     }
 }
 
